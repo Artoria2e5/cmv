@@ -689,7 +689,7 @@ drawCMSplitStateBox _ _ emissiontype _ currentStates sIndex
           singleSymbolsAndEmissions = zip ["A","U","G","C"] (VU.toList singleEmissionEntries)
           pairEmissionBitscores = CM._stateEmissions currentState
           pairEmissionEntries = setEmissions emissiontype 16 pairEmissionBitscores
-          pairSymbolsAndEmissions = zip ["AA","AU","AG","AC","UU","UA","UG","UC","GG","GA","GU","GC","CC","CA","CU","CG"] (VU.toList pairEmissionEntries)
+          pairSymbolsAndEmissions = zip ["AA","AC","AG","AU","CA","CC","CG","CU","GA","GC","GG","GU","UA","UC","UG","UU"] (VU.toList pairEmissionEntries)
           pairSymbolsAndEmissions1 = take 8 pairSymbolsAndEmissions
           pairSymbolsAndEmissions2 = drop 8 pairSymbolsAndEmissions
           dState = setState ("D" ++ stateIndx) (negate 0.5) (negate 1)  === strutY 1 
